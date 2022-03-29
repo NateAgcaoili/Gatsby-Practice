@@ -1,13 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-
-      <h1>Hello world!</h1>
+    <Layout>
+      <h1>Home Page</h1>
       <div>
         <Link to="/about">about</Link>
       </div>
@@ -15,6 +13,6 @@ export default function Home() {
         <Link to="/company/history">history</Link>
       </div>
       <a href="/about">reg link</a>
-    </div>
+    </Layout>
   )
 }
