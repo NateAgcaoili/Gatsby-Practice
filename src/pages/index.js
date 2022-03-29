@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 export default function Home() {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <h1 className="about-heading">Home page</h1>
       <div>
         <Link to="/about">about</Link>
       </div>
