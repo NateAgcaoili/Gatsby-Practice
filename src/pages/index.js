@@ -2,17 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 
+import { page, text } from "../examples/home.module.css"
+import { ExampleButton } from "../examples/button"
+
 export default function Home() {
   return (
     <Layout>
-      <h1 className="about-heading">Home page</h1>
-      <div>
-        <Link to="/about">about</Link>
+      <div className={page}>
+        <ExampleButton>Click me</ExampleButton>
+        <h1>Home page</h1>
+        <p className={text}>
+          dsfhalskjd fldskh flksadh flksadh fadskjh flksadh flkjdsahfl kjsdafl
+        </p>
       </div>
-      <div>
-        <Link to="/company/history">history</Link>
-      </div>
-      <a href="/about">reg link</a>
     </Layout>
   )
 }
